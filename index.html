@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>VinciQuips - Home</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>VinciQuips</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>VinciQuips</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="merchandise.html">Merchandise</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<section class="hero">
-			<h2>Welcome to VinciQuips</h2>
-			<p>At VinciQuips, we provide high-quality services to meet all of your needs. From web design to digital marketing, we have the expertise to help your business succeed.</p>
-			<p>Explore our website to learn more about our services and how we can help your business grow.</p>
-			<a href="#services" class="button">Learn More</a>
-		</section>
-		
-		<section id="services">
-			<h2>Our Services</h2>
-			<div class="service">
-				<img src="web-design.jpg" alt="Web Design">
-				<h3>Web Design</h3>
-				<p>Our team of expert designers will create a beautiful, functional website that represents your brand and meets your business goals.</p>
-			</div>
-			<div class="service">
-				<img src="digital-marketing.jpg" alt="Digital Marketing">
-				<h3>Digital Marketing</h3>
-				<p>We'll help you reach your target audience with effective digital marketing strategies, including SEO, PPC, and social media marketing.</p>
-			</div>
-			<div class="service">
-				<img src="content-creation.jpg" alt="Content Creation">
-				<h3>Content Creation</h3>
-				<p>We can help you create engaging, informative content that resonates with your audience and drives traffic to your website.</p>
-			</div>
-		</section>
-		
-		<section id="social-media">
-			<h2>Follow Us on Social Media</h2>
-			<p>Stay up-to-date with the latest news, trends, and insights by following VinciQuips on social media:</p>
-			<div class="social-icons">
-				<a href="https://www.youtube.com/channel/UCJ47yO26-YyVgF3Tqo3K7Dg"><img src="youtube.png" alt="YouTube"></a>
-				<a href="https://www.instagram.com/vinciquips/"><img src="instagram.png" alt="Instagram"></a>
-				<a href="https://www.tiktok.com/@vinciquips"><img src="tiktok.png" alt="TikTok"></a>
-			</div>
-			<p>We also share fun and interesting facts on our social media channels, so be sure to follow us for your daily dose of knowledge!</p>
-		</section>
-
-		<section id="mer
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">VinciQuips</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="merchandise.html">Merchandise</a>
+            <ul>
+              <li><a href="#">Apparel</a>
+                <ul>
+                  <li><a href="#">Man</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Unisex</a></li>
+                  <li><a href="#">Kids</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Lifestyle</a>
+                <ul>
+                  <li><a href="#">Mugs</a></li>
+                  <li><a href="#">Hats</a></li>
+                  <li><a href="#">Belts</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Collections</a>
+                <ul>
+                  <li><a href="#">Posters</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Welcome to VinciQuips</h1>
+        <p>Learn fun facts, weird facts, unknown facts, future facts, and knowledge sharing.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Featured Posts</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Post 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h3>Post 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><a class="btn btn-secondary
