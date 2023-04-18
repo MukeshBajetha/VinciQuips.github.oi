@@ -1,16 +1,8 @@
-/* reset styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* General styles */
 
-/* global styles */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f5f5f5;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -19,31 +11,8 @@ body {
   padding: 0 20px;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
 a {
-  color: #333;
+  color: #1e88e5;
   text-decoration: none;
 }
 
@@ -51,125 +20,133 @@ a:hover {
   text-decoration: underline;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transition: all 0.3s ease;
+/* Header */
+
+header {
+  background-color: #1e88e5;
+  color: white;
+  padding: 20px 0;
 }
 
-.btn:hover {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
-}
-
-/* header styles */
 header a {
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-/* navigation styles */
-nav {
-  margin-top: 20px;
-  text-align: center;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
+header nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: inline-block;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 10px;
+header nav li {
+  margin-left: 20px;
 }
 
-nav a {
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
+/* Home */
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a:hover {
-  color: #333;
+.home-content img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* footer styles */
+.home-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* About */
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-content img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Merchandise */
+
+.merchandise-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.merchandise-category {
+  margin-right: 20px;
+}
+
+.merchandise-category h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.merchandise-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.merchandise-category li {
+  margin-bottom: 10px;
+}
+
+.merchandise-category a {
+  display: block;
+  font-size: 20px;
+  color: #1e88e5;
+}
+
+/* Footer */
+
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #f5f5f5;
+  padding: 20px 0;
   text-align: center;
 }
 
-/* merchandise page styles */
-.merchandise {
-  margin-top: 40px;
-  text-align: center;
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
 }
 
-.merchandise h2 {
-  margin-bottom: 20px;
+footer a {
+  color: #1e88e5;
 }
-
-.merchandise ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.merchandise li {
-  width: 30%;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-.merchandise img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* apparel page styles */
-.apparel {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.apparel h2 {
-  margin-bottom: 20px;
-}
-
-.apparel ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.apparel li {
-  width: 23%;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-.apparel img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* lifestyle
